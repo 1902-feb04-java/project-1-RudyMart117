@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1>Welcome to the Employees Homepage</h1>
+	<h3>Employee Options:</h3>
+	<span>You can view all of your reimbursement requests by
+		clicking the "View requests" button.<br> To view user info click
+		the "View info" button.<br> To make a reimbursement request click
+		"Make request" button.<br>
+	</span>
+	<div style="text-align: inline">
+		<form action="populate" method="post">
+			<button type="submit">View request</button>
+		</form>
+		<form action="info" method="post">
+			<button type="submit">View/Update info</button>
+		</form>
+		<form action="./newForm.html" method="post">
+			<button type="submit">Make request</button>
+		</form>
+	</div>
+
+	<a href="logout">Logout</a>
+</body>
+</html>

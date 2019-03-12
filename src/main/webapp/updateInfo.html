@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Info</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h3>User Info:</h3>
+	<p>To update information, user MUST fill out all fields.<br>You do not have to actually change password,
+	 if you want to keep same password just type your existing password in both "New password" and "Re-type password fields.</p>
+	<form action="update" method="post">
+		<label for="newName">New username:</label>
+		<input type="text" name="newName">
+		<label for="newPass">New password:</label>
+		<input type="text" name="newPass">
+		<label for="checkPass">Re-type password:</label>
+		<input type="text" name="checkPass">
+		<button type="submit">Update info</button>
+	</form>
+</body>
+</html>

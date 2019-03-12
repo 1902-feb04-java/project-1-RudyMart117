@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manager</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h1 style="color: blue">Welcome to the Managers Homepage</h1>
+	<h3>Manager Options:</h3>
+	<div>
+		<label for="viewEmp">View all employees.</label>
+		<form action="viewEmp"method="post">
+			<button type="submit" name="viewEmp">View employees</button>
+		</form>
+		<label for="manager">View all requests made.</label>
+		<form action="manager" method="post">
+			<button type="submit" name="manager">View requests</button>
+		</form>
+		<label for="pending">View all pending requests.</label>
+		<form action="pending" method="post">
+			<button type="submit" name="pending">View requests</button>
+		</form>
+		<label for="resolved">View all resolved requests.</label>
+		<form action="resolved" method="post">
+			<button type="submit" name="resolved">View requests</button>
+		</form>
+		<label for="viewEmp">View all requests from a single employee.<br>Enter
+			employee id:</label>
+		<form action="single" method="post">
+			<input type="number" name="viewSingle"min="4" max="9">
+			<button type="submit" name="viewSingle">View request</button>
+		</form>
+		<label for="status">Approve of Deny requests.</label>
+		<form action="./statusChange.html" method="post">
+			<button type="submit" name="status">Resolve requests</button>
+		</form>
+	</div>
+	<a href="logout">Logout</a>
+
+</body>
+</html>
